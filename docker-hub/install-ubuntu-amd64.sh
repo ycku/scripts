@@ -1,7 +1,9 @@
 #!/bin/bash
 # Please check out the details of official page: https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/
+# Tested on Ubuntu Zesty 17.04 amd64
+
 # This script need to sudo.
-# Testing on Ubuntu Zesty 17.04 amd64
+sudo -v
 
 # Uninstall old versions
 apt-get remove docker docker-engine docker.io
