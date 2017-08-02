@@ -8,4 +8,3 @@ sudo pip install -r requirements.txt
 python setup.py build
 sudo python setup.py install
 
-# execution file will be located in bin/docker-compose
