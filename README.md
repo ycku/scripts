@@ -1,2 +1,2 @@
 # scripts
-All about scripts
+scripts and notes
