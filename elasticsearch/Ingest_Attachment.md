@@ -46,4 +46,4 @@ path.repo: ["/tmp"]
 * 檔案不用解析, 全由Ingest plugin完成所有流程
 * 專案提供的IndexFile.sh有一些小問題, 修改如下:
 * 最後一行IP要手動調整成自己的環境.
-* indexFile.sh: http://gitlab.ideas.iii.org.tw/iServDB/docs/blob/master/elasticsearch/indexFile.sh
+* 檔案匯入script: [indexFile.sh](indexFile.sh)
