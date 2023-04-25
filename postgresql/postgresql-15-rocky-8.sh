@@ -34,5 +34,17 @@ else
   sudo dnf update -y postgresql15-server
 fi
 
-sudo dnf update -y postgresql15 postgresql15-contrib postgresql15-llvmjit postgresql15-plpython3
+echo "### Install/Update useful packages - $(date +"%Y-%m-%d %H:%M")"
+PACKAGES="postgresql15 postgresql15-contrib postgresql15-llvmjit postgresql15-plpython3"
+for PKG in $PACKAGES
+do
+  echo "### Install/Update package: ${PKG} - $(date +"%Y-%m-%d %H:%M")"
+  sudo dnf list installed $PKG
+  xRC=$?
+  if [[ $xRC -ne 0 ]]; then
+    sudo dnf install -y $PKG
+  else
+    sudo dnf update -y $PKG
+  fi
+done
 echo "### Finished - $(date +"%Y-%m-%d %H:%M")"
